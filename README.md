@@ -97,11 +97,39 @@
 
 7. 矩阵乘法运算符：%*%
 
-8. 显示S3对象的结构：str(S3对象) （short for structure）
+8. 显示S3对象的结构：str(S3对象) （short for structure）；str()同样适用于S4对象
 
 9. class()的含义，并且与mode()和typeof()比较：class()用于判断对象的类型
 
 10. attributes(对象)：列出一个对象的所有组件
+
+11. 1:length(x)和seq(x)（or seq_along(x)）的比较
+
+12. 创建向量时c()、rep()和seq()三种方法的比较
+
+13. any()和all()的用法：用于对一个向量中的元素进行整体判断
+
+14. 累积运算符的用法：cumsum()、cummax()、cummin()等，也是返回一个向量
+
+15. sapply()函数的用法（simplify apply）:将函数应用在列表上，返回的是**向量**
+
+16. NA和NULL的区别：NA是缺失值，需要特殊处理；NULL是空值，任何计算都会跳过NULL进行
+
+17. 向量进行元素筛选时，直接在[]中写选择条件，和使用subset()函数的区别：subset()可以自动移除NA，而[]方式不能，将返回NA
+
+18. which()：返回符合条件的向量元素的索引
+
+19. args()：用于查看函数的参数
+
+20. 判断元素相等使用“==”;判断向量是否相等则使用identical(x, y)：使用identical需要注意x和y的数据类型（typeof()判断）也应该相等
+
+21. apply()函数用法的复习：apply()中调用的函数同样可以包含形参，在函数命后写传入的实参即可
+
+22. which.max()和which.min()的用法
+
+23. which()的进阶用法：当which()查找矩阵元素时，用参数arr.ind=T/F控制返回矩阵坐标还是拉伸后的向量坐标
+
+24. 在矩阵的[]中使用drop = FALSE，防止对矩阵意外降维
            
 #### 参考读物(精华型图书)
 > 下列图书并不很适合编程零基础的人士学习
